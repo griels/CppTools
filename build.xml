@@ -1,6 +1,6 @@
 <!-- AdvancedTools, 2007, all rights reserved -->
 <project name="CppTools plugin deploy" default="copy_files">
-  <property name="idea.sandbox.home.path" value="${IDEA_SANDBOX_HOME_PATH}"/>
+  <property name="idea.sandbox.home.path" value="~/.IntelliJIdea2016.2/system/plugins-sandbox"/>
   <property name="project.path" value="${basedir}" />
 
   <target name="copy_files">

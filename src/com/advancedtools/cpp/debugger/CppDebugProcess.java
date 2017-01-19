@@ -290,7 +290,13 @@ public class CppDebugProcess<T extends BaseCppConfiguration> extends XDebugProce
   }
 
   private boolean processOneCommand() throws IOException {
+    if(commandsToWrite.size()==0) {
+      //System.out.println("commandsToWrite Empty");
+      try{Thread.sleep(500);}catch(InterruptedException e){}
+      return false;
+    }
     final DebuggerCommand command = commandsToWrite.removeFirst();
+    System.out.println(command);
     command.post(context);
     if (command instanceof QuitCommand) return true;
     command.readResponse(context);

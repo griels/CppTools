@@ -68,7 +68,7 @@ public class DebuggerCommand {
       context.getSession().positionReached(
         new CppSuspendContext(stackFrame, context)
       );
-    } else if (token.indexOf("Program exited") != -1) {
+    } else if (token.indexOf("Program exited") != -1 || token.indexOf("exited with code") != -1) {
       context.printToConsole(token, ConsoleViewContentType.SYSTEM_OUTPUT);
       if (!context.getSession().isStopped()) {
         context.getProcessHandler().detachProcess();

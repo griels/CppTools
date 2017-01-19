@@ -1064,16 +1064,16 @@ public class CppSupportLoader implements ProjectComponent, JDOMExternalizable {
               ApplicationManager.getApplication().invokeLater(new Runnable() {
                 public void run() {
                   try {
-                    ((Alarm)autoPopupControllerAlarmField.get(AutoPopupController.getInstance(project))).addRequest(
-                    new Runnable() {
-                        public void run() {
+                    //((Alarm)autoPopupControllerAlarmField.get(AutoPopupController.getInstance(project))).addRequest(
+                    //new Runnable() {
+                    //    public void run() {
                           PsiDocumentManager.getInstance(project).commitAllDocuments();
                           new CodeCompletionHandlerBase(CompletionType.BASIC).invokeCompletion(project, selectedEditor);
-                        }
-                      },
-                      lookupDelay
-                    );
-                  } catch (IllegalAccessException e) {
+                    //    }
+                    //  },
+                    //  lookupDelay
+                    //);
+                  } catch (Throwable e) {//IllegalAccessException
                     e.printStackTrace();
                   }
                 }

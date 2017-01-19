@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AntConfiguration">
-    <buildFile url="file://$PROJECT_DIR$/build.xml">
-      <customJdkName value="IDEA" />
-      <maximumStackSize value="32" />
-      <properties>
-        <property name="IDEA_SANDBOX_HOME_PATH" value="$SANDBOX_HOME$" />
-      </properties>
-      <executeOn event="afterCompilation" target="copy_files" />
-    </buildFile>
-  </component>
   <component name="BuildJarProjectSettings">
     <option name="BUILD_JARS_ON_MAKE" value="false" />
   </component>
@@ -67,9 +57,7 @@
       </profile>
     </annotationProcessing>
   </component>
-  <component name="CopyrightManager" default="">
-    <module2copyright />
-  </component>
+  <component name="CopyrightManager" default="" />
   <component name="CppTools.Loader" reportImplicitCastToBool="false" reportNameReferencedOnce="false" warnedAboutFileOutOfSourceRoot="true" version="3" currentProject="$PROJECT_DIR$/testData/project_files/A.dsp" compilerSelect="AUTO">
     <ignored-file path="C:\MinGW\1.0\home\Maxim\CF-C\idea\testData\completion\A.cpp" />
   </component>
@@ -292,7 +280,7 @@
   <component name="ProjectResources">
     <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" assert-keyword="true" jdk-15="true" project-jdk-name="IDEA" project-jdk-type="IDEA JDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_5" default="false" assert-keyword="true" jdk-15="true" project-jdk-name="IntelliJ IDEA IU-162.2228.15" project-jdk-type="IDEA JDK" />
   <component name="ProjectRunConfigurationManager">
     <configuration default="false" name="Idea" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="CppTools" />
@@ -333,4 +321,3 @@
     </option>
   </component>
 </project>
-

@@ -1,6 +1,6 @@
 <!-- AdvancedTools, 2007, all rights reserved -->
 <project name="CppTools plugin deploy" default="copy_files">
-  <property name="idea.sandbox.home.path" value="~/.IntelliJIdea2016.2/system/plugins-sandbox"/>
+  <property name="idea.sandbox.home.path" value="/home/mike/.IntelliJIdea2016.2/system/plugins-sandbox"/>
   <property name="project.path" value="${basedir}" />
 
   <target name="copy_files">
@@ -10,10 +10,10 @@
        <fileset dir="${project.path}/.." includes="lib.tcl,profile.tcl,defs.h,cfserver.exe,cfserver.mac,cfserver.linux,cfserver.*.syms"/>
     </copy>
 
-    <copy todir="${idea.sandbox.home.path}/plugins/CppTools" >
+<!--    <copy todir="${idea.sandbox.home.path}/plugins/CppTools" >
        <fileset dir="${project.path}/../DOC" includes="readme.*"/>
     </copy>
-
+-->
     <mkdir dir="${idea.sandbox.home.path}/plugins/CppTools/META-INF" />
 
     <copy todir="${idea.sandbox.home.path}/plugins/CppTools/META-INF" >

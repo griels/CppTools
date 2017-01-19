@@ -1,3 +1,12 @@
+# Update 2016/01/19
+
+- Hardcoded IDEA sandbox into ant.xml
+- Fixed GDB 7.11 debugging under linux
+- Commented out crash with Alarm  (TODO: understand what I did)
+
+# Original readme
+
+
 1. Plugin needs IntelliJ IDEA Plugin SDK defined and named as "IDEA", or you will need to modify the customJdkName
   field in the CppTools_Cardea.ipr with the name of your plugin SDK.
 2. Ant file needs IDEA_SANDBOX_HOME_PATH variable defined in settings, that is location defined in Idea plugin sdk.
